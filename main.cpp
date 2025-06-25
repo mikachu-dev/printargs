@@ -3,6 +3,8 @@
 #include <chrono>
 #include <iostream>
 #include <tuple>
+#include <cstdlib>
+#include <cstdio>
 
 #include "program.hpp"
 #include "arguments.hpp"
@@ -15,8 +17,14 @@ main(int argc,
 
     args.parse();
 
+    if (args.count > 0)
+    {
     Program program;
-    program.run(args);
 
-    return 0;
+        program.run(args.path, args.list);
+}
+    
+    char c = std::getchar();
+
+    return EXIT_SUCCESS;
 }

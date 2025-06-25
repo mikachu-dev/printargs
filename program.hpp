@@ -5,13 +5,13 @@
 #include <chrono>
 #include <iostream>
 #include <tuple>
-
-#include "arguments.hpp"
+#include <string>
+#include <vector>
 
 class Program
 {
 public:
-    void run(const Arguments&);
+    void run(std::string, std::vector<std::string>);
 };
 
 #endif /* _PROGRAM_HPP_ */

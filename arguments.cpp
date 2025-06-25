@@ -1,27 +1,16 @@
 #include "arguments.hpp"
 
-Arguments::Arguments(int argc,
-                     char** argv) :
-    argc(argc),
-    argv(argv)
+Arguments::Arguments(int count,
+                     char** array) :
+    argc(count - 1),
+    argv(array),
+    count(argc)
 {
 }
 
 void
 Arguments::parse()
 {
-    list = std::vector<std::string>(argv + 1, argv + argc);
-
-    for (auto& item: list)
-    {
-        // std::wcout << item << std::endl;
+    path = std::string(argv[0]);
+    list = std::vector<std::string>(argv + 1, argv + argc + 1);
 }
-
-    for (int i = 1; i < argc; i++)
-    {
-        std::string s(argv[i]);
-
-        std::cout << i << " : " << s << std::endl;
-    }
-}
-

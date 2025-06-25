@@ -14,12 +14,13 @@ private:
     int argc;
     char** argv;
 
+public:
     std::vector<std::string> list;
+    std::string path;
+    const int& count;
 
 public:
-
-public:
-    Arguments(int argc, char** argv);
+    Arguments(int, char**);
     void parse();
 };
 
