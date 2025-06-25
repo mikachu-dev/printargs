@@ -9,7 +9,7 @@
 
 int
 main(int argc,
-     wchar_t** argv)
+     char** argv)
 {
     Arguments args(argc, argv);
 

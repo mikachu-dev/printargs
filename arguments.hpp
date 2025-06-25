@@ -12,14 +12,14 @@ class Arguments
 {
 private:
     int argc;
-    wchar_t** argv;
+    char** argv;
 
-    std::vector<std::wstring> list;
-
-public:
+    std::vector<std::string> list;
 
 public:
-    Arguments(int argc, wchar_t** argv);
+
+public:
+    Arguments(int argc, char** argv);
     void parse();
 };
 
