@@ -19,11 +19,11 @@ main(int argc,
 
     if (args.count > 0)
     {
-    Program program;
+        Program program;
 
-        program.run(args.path, args.list);
-}
-    
+        program.run(args);
+    }
+
     char c = std::getchar();
 
     return EXIT_SUCCESS;

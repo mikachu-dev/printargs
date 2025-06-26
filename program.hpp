@@ -8,10 +8,12 @@
 #include <string>
 #include <vector>
 
+#include "arguments.hpp"
+
 class Program
 {
 public:
-    void run(std::string, std::vector<std::string>);
+    void run(Arguments&);
 };
 
 #endif /* _PROGRAM_HPP_ */

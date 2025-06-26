@@ -17,6 +17,7 @@ private:
 public:
     std::vector<std::string> list;
     std::string path;
+    std::string pwd;
     const int& count;
 
 public:
