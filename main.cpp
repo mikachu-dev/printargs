@@ -5,6 +5,7 @@
 #include <tuple>
 #include <cstdlib>
 #include <cstdio>
+#include <conio.h>
 
 #include "program.hpp"
 #include "arguments.hpp"
@@ -24,7 +25,7 @@ main(int argc,
         program.run(args);
     }
 
-    char c = std::getchar();
+    char c = getch();
 
     return EXIT_SUCCESS;
 }
