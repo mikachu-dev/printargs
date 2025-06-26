@@ -18,11 +18,13 @@ main(int argc,
 
     args.parse();
 
+    Program program(args);
+
+    program.printInfo();
+
     if (args.count > 0)
     {
-        Program program;
-
-        program.run(args);
+        program.printArgs();
     }
 
     char c = getch();

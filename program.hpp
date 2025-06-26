@@ -12,8 +12,12 @@
 
 class Program
 {
+private:
+    Arguments args;
 public:
-    void run(Arguments&);
+    Program(Arguments);
+    void printInfo();
+    void printArgs();
 };
 
 #endif /* _PROGRAM_HPP_ */
