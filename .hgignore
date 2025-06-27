@@ -1,6 +1,8 @@
+syntax:glob
 *.obj
 *.o
 *.exe
 *.dll
 *.winmd
 *.swp
+
