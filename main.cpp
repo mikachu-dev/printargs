@@ -1,12 +1,8 @@
-#include <windows.h>
-#include <thread>
-#include <chrono>
 #include <iostream>
-#include <tuple>
 #include <cstdlib>
 #include <cstdio>
-#include <conio.h>
 
+#include "termio.hpp"
 #include "program.hpp"
 #include "arguments.hpp"
 
