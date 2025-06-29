@@ -23,7 +23,7 @@ main(int argc,
         program.printArgs();
     }
 
-    char c = getch();
+    getch();
 
     return EXIT_SUCCESS;
 }

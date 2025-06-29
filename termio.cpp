@@ -1,12 +1,15 @@
+#include "termio.hpp"
+
+#if defined(_WIN32) || defined(_WIN64) || defined(__WINDOWS__)
+#   include <conio.h>
+
+char (*getch)(void) = getch;
+
+#else
 #include <stdio.h>
 #include <termios.h>
 #include <unistd.h>
 
-#include "termio.hpp"
-
-#if defined(_WIN32) || defined(_WIN64) || defined(__WINDOWS__)
-
-#else
 
 char getch()
 {
